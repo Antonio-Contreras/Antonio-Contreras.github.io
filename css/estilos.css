@@ -1,11 +1,17 @@
 p {
-    color: red;
-    background-color: darkblue;
+    color: whitesmoke;
 }
+
 body {
     background-color: rgb(16, 16, 31);
 }
 
-h1 {
+h1, h2 {
     color:whitesmoke;
+}
+
+menu {
+    font-style: italic;
+    width: 30px;
+    column-width: 40px;
 }
