@@ -5,23 +5,64 @@
   type="text/css">
 </head>
 <body>
-  <h1>Crear páginas web</h1>
+ <br>
   <table><tr>
     <td class="menu"><a href="dos.html">Estructura básica</a></td>
-    <td><a href="tres.html">Etiquetas más usadas</a></td>
-    <td><a href="cuatro.html">Estilos</a></td>
+    <td class="menu"><a href="tres.html">Etiquetas más usadas</a></td>
+    <td class="menu"><a href="cuatro.html">Estilos</a></td>
   </tr></table>
+  <h1>Crear páginas web</h1>
   <p>Esto es el ejemplo básico
     de una página web</p>
     <div>
       <p>Las webs pueden tener una sola página o varias. Cada una es un archivo cuyo nombre termina en <em>.html</em></p>
       <p>Las páginas web contienen <em>código html</em>, que está formado
       por <em>etiquetas</em>. </p>
-      <p>Cada etiqueta se enmarca dentro de signos de mayor y menor (en inglés, <em>braquets</em>), <code><</code> y <code>></code></p>
+      <p>Cada etiqueta se enmarca dentro de signos de mayor y menor (en inglés, <em>braquets</em>), <code>&lg;</code> y <code>></code></p>
     </div>
     <h2>Qué hacer:</h2>
     <div>
-      <p>Navegando, puedes leer algo más sobre las etiquetas.</p>
+      <p>Navegando, puedes leer algo más sobre las etiquetas y los estilos.</p>
+      <p>En tu página web debes tener al menos tres archivos: el índice y dos páginas más.
+         Cada página debe tener varios párrafos y divisiones (etiquetas <code>&lt;p&gt;, 
+              &lt;div&gt;</code>). También debe tener encabezados adecuados 
+              (etiquetas <code>&lt;h1&gt;, &lt;h2&gt;</code>). Por último, no olvidar
+              que las tres páginas tendrán enlaces para ir de una a otra. Los enlaces se
+              hacen con la etiqueta <code>&lt;a&gt;</code> y el parámetro <code>href</code>.
+      </p>
+      <p>Al menos una de las páginas tendrá una imagen. Al menos una página debe tener
+        una tabla.
+      </p>
     </div>
-</body>
+    <h2>Tablas</h2>
+    <p>Para hacer una tabla hay que usar tres etiquetas: <code>&lt;table&gt;, 
+      &lt;tr&gt;, &lt;td&gt;</code>. La primera inicia la tabla. Dentro de ella, se 
+      coloca la segunda, para iniciar una fila ("table row", abreviado <em>td</em>).
+      Dentro de cada fila, se insertará una etiqueta td para cada división de la fila.</p>
+    <p>Ejemplo:</p>
+    <pre><code>
+      &lt;table style="border: 2px; border-color:beige; color:beige"&gt;
+         &lt;tr&gt;
+           &lt;td&gt; Primer elemento &lt;/td&gt;
+           &lt;td&gt; Segundo elemento &lt;/td&gt;
+         &lt;/tr&gt;
+        &lt;tr&gt;
+           &lt;td&gt; Tercer elemento &lt;/td&gt;
+           &lt;td&gt; Cuarto elemento &lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/table&gt;
+    </code><pre>
+
+    <table style="border: 2px; border-color:beige; color:beige">
+      <tr>
+         <td> Primer elemento </td>
+          <td> Segundo elemento </td>
+       </tr>
+       <tr>
+        <td> Tercer elemento </td>
+        <td> Cuarto elemento </td>
+      </tr>
+    </table>
+  <p>Con una tabla se ha realizado el menú de arriba.</p>
+  </body>
 </html>

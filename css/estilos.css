@@ -10,8 +10,9 @@ h1, h2 {
     color:whitesmoke;
 }
 
-menu {
+.menu {
     font-style: italic;
-    width: 30px;
-    column-width: 40px;
+    border-collapse: separate;
+    border-spacing: 150px 0;
+    padding: 40px;
 }
