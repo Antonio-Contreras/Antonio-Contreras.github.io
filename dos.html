@@ -12,5 +12,49 @@
         </tr>
     </table>
     <h1>Estructura básica</h1>
+    <p>Todas las páginas de nuestra web (y de la mayoría) deben empezar y terminar
+        por la etiqueta <code>&lt;html&gt;</code>  y terminar con <code>&lt;/html&gt;</code>
+        (aunque además, se puede poner antes una etiqueta de comentario <code>&lt;!DOCTYPE html&gt;</code> 
+        para facilitar la correcta interpretación de todos los navegadores).
+    </p>
+    <p>Entre ellas se colocan las etiquetas de las dos partes de una página web: la <b>cabeza</b> y el <b>cuerpo</b>:
+         <code>&lt;head&gt;</code> y <code>&lt;body&gt;</code>, cada una con su correspondiente etiqueta final.
+    </p>
+    <p>La parte de la <b>cabeza</b> contiene las partes de la página que no deben ser visibles, 
+    y se cargan antes que la parte visible, el <b>cuerpo</b>. Contiene, por ejemplo, archivos
+    que se cargan antes, como los de estilo, y trozos de <b><em>script</em></b> -programas que se ejecutan
+    dentro de la página web.</p>
+    <p>El cuerpo contiene el texto, espacios, botones e imágenes que se pueden ver.</p>
+    <p>En resumen:</p>
+    <pre><code>    &lt;html&gt;
+         &lt;head&gt;
+            &lt!-- Aquí va lo que no se ve-->
+         &lt;/head&gt;
+         &lt;body&gt;
+            &lt!-- Aquí va la parte que se puede ver-->
+         &lt;/body&gt;
+    &lt;html&gt;</code>
+    </pre>
+    <h2>Cargando una hoja de estilos css</h2>
+    <p>Un archivo css es una lista de palabras que definen estilos de formato de clases de etiqueta. </p>
+    <p> Aunque el lenguaje html nos permite poner el formato dentro de una etiqueta 
+        web, esto hace que sea más engorroso crear la página web, porque:
+        <ul>
+            <li>Vemos peor el contenido importante.</li>
+            <li>Los estilos de un párrafo pueden ser distintos de otro, por error al escribir
+                el mismo código muchas veces en cada etiqueta.
+            </li>
+            <li>Si queremos cambiar el estilo de la web, hay que hacer cambios en muchas
+                etiquetas en vez de en una, y esto supone tiempo y errores.
+            </li>
+        </ul>
+    <p>La etiqueta <code>&lt;link&gt;</code> permite cargar un archivo con definiciones
+    de estilo. Dentro hay que poner el nombre del archivo en el parámetro <code>href</code>
+    y el tipo de archivo en el parámetro <code>rel</code>.
+    </p>
+    <p><code>&lt;link href="mi_archivo.css" rel="stylesheet"&gt;</code></p>
+    <p>Hay que sustituir <em>mi_archivo.css</em> por el nombre correcto de nuestro archivo,
+    que, además, deberíamos colocar dentro de una carpeta <b>css</b> para que tengamos
+    bien organizados los archivos de nuestra página web.</p>
   </body>
 </html>

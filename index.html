@@ -31,9 +31,22 @@
               hacen con la etiqueta <code>&lt;a&gt;</code> y el parámetro <code>href</code>.
       </p>
       <p>Al menos una de las páginas tendrá una imagen. Al menos una página debe tener
-        una tabla.
+        una tabla. Consulta el siguiente apartado para saber cómo se hace una tabla.
       </p>
     </div>
+    <h3>Contenido de tus páginas</h3>
+    <p>El texto que hay que escribir en las páginas puede elegirlo el alumno, dentro de 
+      las siguientes sugerencias y límites:</p>
+      <ul>
+      <li>Debe estar relacionado con la ciencia de los ordenadores (en Inglés,
+        <em>Computer Science</em>). Puede ser programación, servicios de Internet, Herramientas
+        de desarrollo, o algo similar. </li>
+      <li>Sugerencia 1: Importancia de las páginas web en la sociedad actual.</li>
+      <li>Cantidad de programadores que harán falta en el futuro mercado laboral.</li>
+      <li>Información personal acerca de los hobbies tecnológicos que nos gustan.</li>
+      <li>Lenguajes de programación.</li>
+      <li>Carreras profesionales con más salidas.</li>
+      </ul>
     <h2>Tablas</h2>
     <p>Para hacer una tabla hay que usar tres etiquetas: <code>&lt;table&gt;, 
       &lt;tr&gt;, &lt;td&gt;</code>. La primera inicia la tabla. Dentro de ella, se 
@@ -41,7 +54,9 @@
       Dentro de cada fila, se insertará una etiqueta td para cada división de la fila.</p>
     <p>Ejemplo:</p>
     <pre><code>
-      &lt;table style="border: 2px; border-color:beige; color:beige"&gt;
+      &lt;table style="border: 2px solid beige; 
+                      background-color: grey; 
+                      color: beige"&gt;
          &lt;tr&gt;
            &lt;td&gt; Primer elemento &lt;/td&gt;
            &lt;td&gt; Segundo elemento &lt;/td&gt;
@@ -53,10 +68,10 @@
       &lt;/table&gt;
     </code><pre>
 
-    <table style="border: 2px; border-color:beige; color:beige">
+    <table style="border: 2px solid beige; background-color: grey; color:beige">
       <tr>
          <td> Primer elemento </td>
-          <td> Segundo elemento </td>
+         <td> Segundo elemento </td>
        </tr>
        <tr>
         <td> Tercer elemento </td>

@@ -13,6 +13,95 @@
         </tr>
     </table>
     <h1>Etiquetas más usadas</h1>
-</body>
-
+    <h2>Cabeceras o encabezados</h2>
+    <p>Toda web debe tener encabezados claros, como cualquier documento. Los encabezados
+        se hacen con la etiqueta <code>&lt;hX&gt;</code>, en la que la X es un número que
+        marca el nivel de importancia. <code>&lt;h1&gt;</code> es el de primer nivel. 
+        <code>&lt;h6&gt;</code> es el más pequeño. Hay que poner una etiqueta donde empieza,
+        y la misma con diagonal <code>/</code> cuando termina.
+    </p>
+    <p>Los encabezados inician una línea nueva y terminan con una línea nueva.
+    </p>
+    <h2>Divisiones y párrafos</h2>
+    <h3>Párrafos</h3>
+    <p>El <b><em>párrafo</em></b> es un trozo de texto que puede contener
+    varias frases, y que empieza en una nueva línea.</p>
+    <p >
+    No hace falta indicar este salto final. Las etiquetas <code>&lt;p&gt;</code> 
+    y <code>&lt;/p&gt;</code> se encargan de colcar este salto.</p>
+    <p>Si fuera necesario podemos separar forzar un salto obligatorio dentro de un
+        párrafo mediante la etiqueta <code>&lt;br&gt;</code>. Aunque se genera una nueva
+        línea, ambas pertenecen al mismo párrafo.
+    </p>
+    <h3>División</h3>
+    <p>La división se coloca entre las etiquetas <code>&lt;div&gt;</code>
+     y <code>&lt;/div&gt;</code>. Genera un bloque parecido al párrafo, pero, en
+     este caso, se suele usar para meter dentro otros tipos de contenidos. Es una
+     especie de <em>contenedor</em>.
+    </p>
+    <p>Lo más habitual es aplicarle estilos, para así poder formatear la página
+        con más facilidad.
+    </p>
+    <p>Ejemplo:</p>
+    <pre>
+        <code>&lt;div style="padding-left: 40px; padding-right: 40px; color: red"&gt;
+    Este párrafo está formateado como una división, a la que se 
+    ha dado el estilo de espacio a los lados de 40 puntos
+    y color rojo para el texto.
+&lt;/div&gt;</code>
+    </pre>
+    <div style="padding-left: 40px; padding-right: 40px; color: red">
+    Este párrafo está formateado como una división, a la que se
+    ha dado el estilo de espacio a los lados de 40 puntos y color rojo para el texto.
+    </div>
+    <p>En general debemos aplicar los estilos dentro del archivo css, tal y como
+        veremos en la página que explica este tema. Pero en este ejemplo se ha
+        colocado el estilo dentro de la etiqueta, a modo de <em>parámetro</em>.
+    </p>
+    <h3>Spans</h3>
+    <p>Un <b><em>span</em></b> es un bloque de texto que está dentro de una línea.
+    Sirve para enmarcar las palabras o caracteres que contiene de una manera especial:</p>
+    <p>El agua del mar se dice que tiene color <span style="color:blue;font-weight:bold;">azul</span>,
+        pero es a veces un tono 
+        <span style="color: darkcyan;font-weight:bold;"> entre cyan y aguamarina</span>, 
+             y otras veces <span style="color: darkslategrey;font-weight:bold; background-color:darkgray ">gris azulado oscuro</span>.
+    </p>
+    <h2>Enlaces</h2>
+    <p>Para hacer que un texto se convierta en un hiper-enlace hay que usar
+        la etiqueta <code>&lt;a&gt;</code>, dentro de la cual pondremos
+        el parámetro <code>href</code> para escribir la dirección de destino:
+    </p>
+    <code>&lt;a href="cuatro.html"&gt;Pincha aquí&lt;/a&gt;</code>
+    <p><a href="cuatro.html">Pincha Aquí</a></p>
+    <h2>Imágenes</h2>
+    <p>La etiqueta <code>&lt;img&gt;</code>insertará una imagen en la página web.</p>
+    <p>Esta etiqueta exige que pongamos la ruta al archivo de imagen en el parámetro <em><b>src</b></em>.</p>
+    <code>&lt;img src="ies_solo_logo.png"&gt;</code>
+    <p><img src="Ies_solo_logo.png"></p>
+    <p>También podemos utilizar los parámetros <b>width</b> y <b>height</b> para indicar el
+      tamaño de la imagen, aunque otra opción es usar una definición dentro del archivo css 
+      de estilos, si el tamaño de todas las imágenes es el mismo.
+    </p>
+    <h2>Otros elementos html</h2>
+    <p>También son muy usadas las etiquetas <code>table, code, blockquote y script</code>. Sirven,
+        respectivamente:</p>
+      <ul> 
+        <li>para hacer tablas (se explicó en la <a href="index.html">primera página</a>),
+        </li><li>para formatear el texto como si fuera un ejemplo de programación (está utilizado en
+        todas las páginas para poner ejemplos),
+        </li>
+        <li> para crear un párrafo que parezca una <em>cita</em>, </li>
+        <li>y,
+        el último, para escribir un programa que se ejecute con la página web, como por ejemplo los
+        fragmentos <b><em>javascript</em></b> que generan botones y acciones con ellos.
+      </ul>
+    <p>Las enumeraciones y listas se hacen con las etiquetas <code>&lt;ul&gt;</code> -si es con puntos
+        como la anterior-, 
+        y <code>&lt;ol&gt;</code> -si están numeradas-. Por supuesto con su correspondiente
+        etiqueta para terminar la lista.
+    </p>
+    <p>Cada elemento de estas listas se debe escribir dentro del conjunto de etiquetas
+        <code>&lt;li&gt;</code> y <code>&lt;/li&gt;</code>.
+    </p>
+  </body>
 </html>

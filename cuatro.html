@@ -13,6 +13,46 @@
         </tr>
     </table>
     <h1>Estilos</h1>
+    <p>Un archivo de estilos contiene nombres de etiquetas (sin los signos 
+        <code>&lt;</code> y <code>&gt;</code>),
+        y -separado por un espacio- un conjunto de llaves <code>{</code> y <code>}</code>. 
+        Dentro de las llaves se escriben los <em><b>atributos</b></em> de estilo, que
+        son <em>palabras reservadas</em> que hacen funciones especiales.
+    </p>
+    <p>Ejemplos de estas palabras son: <code>color, background-color, width, margin-left, etc.</code> Son una infinidad. No es 
+      posible aprenderlas todas. Lo que hace un programador es consultar siempre en Internet
+      las que le resulten necesarias.
+    </p>
+    <p>Un buen lugar para consultar estos parámetros es
+         <a href="https://www.w3schools.com/css/default.asp">este curso css</a>.</p>
+    <p>El archivo css debe <em>cargarse</em> en cada página web mediante una
+        etiqueta <code>&lt;link&gt;</code> que se coloca en la sección 
+        <code>head</code> de esa página. Esto está explicado en la página
+        <a href="dos.html">Estructura básica</a> de esta web.
+    </p>
+    <p>También es posible pasar un estilo dentro de la página web usando el parámetro 
+        <code>style</code> dentro de una etiqueta. Hay varios ejemplos en estas páginas
+        que puedes consultar.
+    </p>
+    <h2>Estilos personales</h2>
+    <p>Por último, también se puede usar un estilo personalizado para una etiqueta,
+        aunque ésta tenga ya su estilo general. Por ejemplo, en estas páginas, el <em>párrafo</em>
+        tiene una letra de color blanco humo (withesmoke). Si queremos varios párrafos
+        cuyo estilo sea de distinto color, crearemos un estilo personal escribiendo lo 
+        siguiente en el archivo css:</p>>
+        <pre><code>  .otroestilo {
+            color: blanchedalmond;
+  } </code></pre>
+    <p>Ojo: no olvidar el punto delante. Luego, en la página web, ese párrafo lo escribimos usando el parámetro <code>class</code> así:</p>
+        <pre><code>  &lt;p class="otroestilo"&gt;Este párrafo sale de otro color.&lt;/p&gt;</code></pre>
+    <p>El resultado será:</p>
+    <p class="otroestilo">Este párrafo sale de otro color.</p>
+    <p>Hay una segunda forma para hacer esto mismo: se escribe el estilo en el archivo
+        css, pero utilizando # en lugar del punto. Luego, en la etiqueta se usa el parámetro
+        <b><em>id</em></b>. Este método se prefiere al anterior:
+    </p>
+    <p id="ultimoestilo">Este texto utiliza el <em>id</em> "ultimoestilo", que pone
+      el texto de color rojo.</p>
 </body>
 
 </html>
